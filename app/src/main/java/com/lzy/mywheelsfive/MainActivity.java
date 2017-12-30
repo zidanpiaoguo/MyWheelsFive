@@ -71,7 +71,6 @@ public class MainActivity extends BaseActivity {
                 ShareUtils.sendWeChatCore();
             }
         });
-
     }
 
 
