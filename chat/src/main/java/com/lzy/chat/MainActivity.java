@@ -13,11 +13,6 @@ import com.alibaba.mobileim.YWAPI;
 import com.alibaba.mobileim.YWIMKit;
 import com.alibaba.mobileim.YWLoginParam;
 import com.alibaba.mobileim.channel.event.IWxCallback;
-import com.alibaba.mobileim.conversation.EServiceContact;
-import com.alibaba.mobileim.conversation.IYWConversationService;
-import com.alibaba.mobileim.conversation.YWConversation;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -113,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = mIMKit.getChattingActivityIntent(target, appkey);
 
         startActivity(intent);
+
     }
 
     private void login(String userid,String password) {
@@ -124,8 +120,6 @@ public class MainActivity extends AppCompatActivity {
         //此对象获取到后，保存为全局对象，供APP使用
         //此对象跟用户相关，如果切换了用户，需要重新获取
         mIMKit = YWAPI.getIMKitInstance(userid, APP_KEY);
-
-
 
 
         //开始登录

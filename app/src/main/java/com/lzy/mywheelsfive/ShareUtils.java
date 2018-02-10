@@ -122,21 +122,24 @@ public class ShareUtils {
 
         sp.setImageUrl("http://pic4.nipic.com/20091217/3885730_124701000519_2.jpg");
         sp.setUrl("http://www.baidu.com");
-
+        sp.setShareType(Platform.SHARE_WEBPAGE);
         Platform weibo = ShareSDK.getPlatform(Wechat.NAME);
         weibo.setPlatformActionListener(new PlatformActionListener() {
             @Override
             public void onComplete(Platform platform, int i, HashMap<String, Object> hashMap) {
 
+                Log.d(TAG, "onComplete: ");
             }
 
             @Override
             public void onError(Platform platform, int i, Throwable throwable) {
 
+                Log.d(TAG, "onError: "+throwable.getMessage());
             }
 
             @Override
             public void onCancel(Platform platform, int i) {
+                Log.d(TAG, "onCancel: ");
 
             }
         }); // 设置分享事件回调
@@ -147,7 +150,7 @@ public class ShareUtils {
 
 
     /**
-     * 分享微信好友
+     * 分享微信朋友圈
      */
     public static void sendWeChatCore(){
 
@@ -158,7 +161,7 @@ public class ShareUtils {
 
         sp.setImageUrl("http://pic4.nipic.com/20091217/3885730_124701000519_2.jpg");
         sp.setUrl("http://www.baidu.com");
-
+        sp.setShareType(Platform.SHARE_WEBPAGE);
         Platform weibo = ShareSDK.getPlatform(WechatMoments.NAME);
         weibo.setPlatformActionListener(new PlatformActionListener() {
             @Override

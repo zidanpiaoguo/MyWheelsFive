@@ -87,22 +87,48 @@
 		默认值为false。此外，微信收藏不支持此字段。wx4868b35061f87885
 	-->
 	<!--要分享微信小应用程序时用userName,path-->
+
+
+	<!--<Wechat-->
+		<!--Id="4"-->
+		<!--SortId="4"-->
+		<!--AppId="wx4868b35061f87885"-->
+		<!--AppSecret="64020361b8ec4c99936c0e3999a9f249"-->
+		<!--UserName="gh_afb25ac019c9"-->
+		<!--Path="pages/index/index.html?id=1"-->
+		<!--BypassApproval="true"-->
+		<!--Enable="true" />-->
+
+	<!--<WechatMoments-->
+		<!--Id="5"-->
+		<!--SortId="5"-->
+		<!--AppId="wx4868b35061f87885"-->
+		<!--AppSecret="64020361b8ec4c99936c0e3999a9f249"-->
+		<!--BypassApproval="false"-->
+		<!--Enable="true" />-->
+
+
+
+
     <Wechat
         Id="4"
         SortId="4"
-        AppId="wx4868b35061f87885"
-        AppSecret="64020361b8ec4c99936c0e3999a9f249"
+        AppId="wxa94f883a3bc350d8"
+        AppSecret="ddfe2726901c8dcc8103aea7c0e154eb"
 		UserName="gh_afb25ac019c9"
 		Path="pages/index/index.html?id=1"
-        BypassApproval="true"
+        BypassApproval="false"
         Enable="true" />
+
+
+
     
     <WechatMoments
         Id="5"
         SortId="5"
-        AppId="wx4868b35061f87885"
-        AppSecret="64020361b8ec4c99936c0e3999a9f249"
-        BypassApproval="true"
+        AppId="wxa94f883a3bc350d8"
+        AppSecret="ddfe2726901c8dcc8103aea7c0e154eb"
+        BypassApproval="false"
         Enable="true" />
         
 	<WechatFavorite

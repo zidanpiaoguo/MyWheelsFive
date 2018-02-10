@@ -1,1 +1,1 @@
-include ':app', ':chat', ':pay', ':wx'
+include ':app', ':chat', ':pay', ':wx', ':map'
